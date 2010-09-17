@@ -1,0 +1,19 @@
+<% form_for @post do |f| -%>
+	<p>
+	  <%= f.label :author, "Author" %>
+	  <%= f.text_field :author %>
+	</p>
+	<p>
+	  <%= f.label :title, "Title" %>
+	<%= f.text_field :title %>
+	</p>
+	<p>
+	  <%= f.label :body, "Body" %>
+		<%= f.text_field :body %>
+	</p>
+	<p>
+	  <%= f.label :published, "Published" %>
+	  <%= f.check_box :published %>
+	</p>
+	<%= f.submit "Save", :disable_with => 'Saving...' %>
+<% end -%>

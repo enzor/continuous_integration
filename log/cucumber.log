@@ -1,0 +1,294 @@
+# Logfile created on Fri Sep 17 10:56:29 +0200 2010REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-17 10:58:56) [GET]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-17 11:01:50) [GET]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostController#index (for 127.0.0.1 at 2010-09-17 11:03:40) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-17 11:03:40) [GET]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostController#index (for 127.0.0.1 at 2010-09-17 11:04:13) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-17 11:04:13) [GET]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostController#index (for 127.0.0.1 at 2010-09-17 11:07:15) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering post/index
+Completed in 109ms (View: 103, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /posts/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-09-17 11:07:15) [GET]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:08:22) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-17 11:08:22) [GET]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:12:03) [GET]
+  [4;36;1mPost Load (1.3ms)[0m   [0;1mSELECT * FROM "posts" [0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-17 11:12:03) [GET]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:12:40) [GET]
+  [4;36;1mPost Load (1.2ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /posts/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-09-17 11:12:40) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (14.7ms)
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://www.example.com/posts/new]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:13:21) [GET]
+  [4;36;1mPost Load (1.4ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /posts/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-09-17 11:13:21) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (17.3ms)
+Completed in 24ms (View: 21, DB: 0) | 200 OK [http://www.example.com/posts/new]
+REQUESTING PAGE: POST /posts with {"commit"=>"Save", "post"=>{"body"=>"I love cocktails with umbrellas", "title"=>"Long John", "author"=>"John", "published"=>"0"}} and HTTP headers {"HTTP_REFERER"=>"/posts/new"}
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-09-17 11:13:21) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"author"=>"John", "title"=>"Long John", "body"=>"I love cocktails with umbrellas", "published"=>"0"}}
+  [4;35;1mPost Create (1.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "author", "body", "title", "published", "updated_at") VALUES('2010-09-17 09:13:21', 'John', 'I love cocktails with umbrellas', 'Long John', 'f', '2010-09-17 09:13:21')[0m
+Redirected to http://www.example.com/
+Completed in 190ms (DB: 1) | 302 Found [http://www.example.com/posts]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/posts"}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:13:21) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:13:43) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /posts/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-09-17 11:13:43) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (14.5ms)
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://www.example.com/posts/new]
+REQUESTING PAGE: POST /posts with {"commit"=>"Save", "post"=>{"body"=>"I love cocktails with umbrellas", "title"=>"Long John", "author"=>"John", "published"=>"0"}} and HTTP headers {"HTTP_REFERER"=>"/posts/new"}
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-09-17 11:13:43) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"author"=>"John", "title"=>"Long John", "body"=>"I love cocktails with umbrellas", "published"=>"0"}}
+  [4;35;1mPost Create (1.3ms)[0m   [0mINSERT INTO "posts" ("created_at", "author", "body", "title", "published", "updated_at") VALUES('2010-09-17 09:13:43', 'John', 'I love cocktails with umbrellas', 'Long John', 'f', '2010-09-17 09:13:43')[0m
+Redirected to http://www.example.com/
+Completed in 176ms (DB: 1) | 302 Found [http://www.example.com/posts]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/posts"}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:13:43) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:14:04) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 23ms (View: 18, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /posts/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-09-17 11:14:04) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (14.5ms)
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://www.example.com/posts/new]
+REQUESTING PAGE: POST /posts with {"commit"=>"Save", "post"=>{"body"=>"I love cocktails with umbrellas", "title"=>"Long John", "author"=>"John", "published"=>"0"}} and HTTP headers {"HTTP_REFERER"=>"/posts/new"}
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-09-17 11:14:04) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"author"=>"John", "title"=>"Long John", "body"=>"I love cocktails with umbrellas", "published"=>"0"}}
+  [4;35;1mPost Create (1.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "author", "body", "title", "published", "updated_at") VALUES('2010-09-17 09:14:04', 'John', 'I love cocktails with umbrellas', 'Long John', 'f', '2010-09-17 09:14:04')[0m
+Redirected to http://www.example.com/
+Completed in 181ms (DB: 1) | 302 Found [http://www.example.com/posts]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/posts"}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:14:04) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:14:25) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /posts/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-09-17 11:14:26) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (15.1ms)
+Completed in 22ms (View: 19, DB: 0) | 200 OK [http://www.example.com/posts/new]
+REQUESTING PAGE: POST /posts with {"commit"=>"Save", "post"=>{"body"=>"I love cocktails with umbrellas", "title"=>"Long John", "author"=>"John", "published"=>"0"}} and HTTP headers {"HTTP_REFERER"=>"/posts/new"}
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-09-17 11:14:26) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"author"=>"John", "title"=>"Long John", "body"=>"I love cocktails with umbrellas", "published"=>"0"}}
+  [4;35;1mPost Create (1.2ms)[0m   [0mINSERT INTO "posts" ("created_at", "author", "body", "title", "published", "updated_at") VALUES('2010-09-17 09:14:26', 'John', 'I love cocktails with umbrellas', 'Long John', 'f', '2010-09-17 09:14:26')[0m
+Redirected to http://www.example.com/
+Completed in 180ms (DB: 1) | 302 Found [http://www.example.com/posts]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/posts"}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:14:26) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:17:42) [GET]
+  [4;36;1mPost Load (1.2ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /posts/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-09-17 11:17:42) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (14.6ms)
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://www.example.com/posts/new]
+REQUESTING PAGE: POST /posts with {"commit"=>"Save", "post"=>{"body"=>"I love cocktails with umbrellas", "title"=>"Long John", "author"=>"John", "published"=>"0"}} and HTTP headers {"HTTP_REFERER"=>"/posts/new"}
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-09-17 11:17:42) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"author"=>"John", "title"=>"Long John", "body"=>"I love cocktails with umbrellas", "published"=>"0"}}
+  [4;35;1mPost Create (1.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "author", "body", "title", "published", "updated_at") VALUES('2010-09-17 09:17:43', 'John', 'I love cocktails with umbrellas', 'Long John', 'f', '2010-09-17 09:17:43')[0m
+Redirected to http://www.example.com/
+Completed in 176ms (DB: 1) | 302 Found [http://www.example.com/posts]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/posts"}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:17:43) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:18:28) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /posts/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-09-17 11:18:28) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (14.6ms)
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://www.example.com/posts/new]
+REQUESTING PAGE: POST /posts with {"commit"=>"Save", "post"=>{"body"=>"I love cocktails with umbrellas", "title"=>"Long John", "author"=>"John", "published"=>"0"}} and HTTP headers {"HTTP_REFERER"=>"/posts/new"}
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-09-17 11:18:28) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"author"=>"John", "title"=>"Long John", "body"=>"I love cocktails with umbrellas", "published"=>"0"}}
+  [4;35;1mPost Create (1.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "author", "body", "title", "published", "updated_at") VALUES('2010-09-17 09:18:28', 'John', 'I love cocktails with umbrellas', 'Long John', 'f', '2010-09-17 09:18:28')[0m
+Redirected to http://www.example.com/
+Completed in 177ms (DB: 1) | 302 Found [http://www.example.com/posts]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/posts"}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:18:28) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-17 11:18:28) [GET]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:19:01) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /posts/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-09-17 11:19:01) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (15.5ms)
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://www.example.com/posts/new]
+REQUESTING PAGE: POST /posts with {"commit"=>"Save", "post"=>{"body"=>"I love cocktails with umbrellas", "title"=>"Long John", "author"=>"John", "published"=>"0"}} and HTTP headers {"HTTP_REFERER"=>"/posts/new"}
+
+
+Processing PostsController#create (for 127.0.0.1 at 2010-09-17 11:19:02) [POST]
+  Parameters: {"commit"=>"Save", "post"=>{"author"=>"John", "title"=>"Long John", "body"=>"I love cocktails with umbrellas", "published"=>"0"}}
+  [4;35;1mPost Create (1.1ms)[0m   [0mINSERT INTO "posts" ("created_at", "author", "body", "title", "published", "updated_at") VALUES('2010-09-17 09:19:02', 'John', 'I love cocktails with umbrellas', 'Long John', 'f', '2010-09-17 09:19:02')[0m
+Redirected to http://www.example.com/
+Completed in 181ms (DB: 1) | 302 Found [http://www.example.com/posts]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/posts"}
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-09-17 11:19:02) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
