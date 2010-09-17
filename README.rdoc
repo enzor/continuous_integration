@@ -1,7 +1,7 @@
 = continuous_integration with rstakeout  - demo
 
 Based on a very inspiring Peepcode lesson on Cucumber by @topfunky
-This is a simple example  on how local continuous integration can be made on rstakeout. 
+This is a simple demo on how local continuous integration can be made with rstakeout. 
 This leaves to other tools as Hudson the job to make a continuous_integration on merges in remote.
 A template will follow soon.
 
@@ -10,6 +10,12 @@ A template will follow soon.
   Just clone the repository:
   git clone git://github.com/enzor/continuous_integration.git
   
+== How it works
+
+  Just run one of the options below , depending on which kind of testing you want to run.
+  rstakeout will watch all files under the testing folder and will run everytime you save one of these files.
+  This means that every time you add a new file, you have to kill and restart the process.
+  
 == Start CI
 
   script/rstakeout rake -> if you want to do CI while testing unit testing or model testing
@@ -17,7 +23,9 @@ A template will follow soon.
   script/cucumber-stakeout -> if you want to do CI with cucumber
     
     cucumber-stakeout also take any other option you would normally pass to cucumber, such tags and profiles.
-    
+  
+  
+  
 == Note on Patches/Pull Requests
 
 * Fork the project.
