@@ -1,0 +1,36 @@
+= continuous_integration with rstakeout  - demo
+
+Based on a very inspiring Peepcode lesson on Cucumber by @topfunky
+This is a simple example  on how local continuous integration can be made on rstakeout. 
+This leaves to other tools as Hudson the job to make a continuous_integration on merges in remote.
+A template will follow soon.
+
+== Installation
+  
+  Just clone the repository:
+  git clone git://github.com/enzor/continuous_integration.git
+  
+== Start CI
+
+  script/rstakeout rake -> if you want to do CI while testing unit testing or model testing
+  
+  script/cucumber-stakeout -> if you want to do CI with cucumber
+    
+    cucumber-stakeout also take any other option you would normally pass to cucumber, such tags and profiles.
+    
+== Note on Patches/Pull Requests
+
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a
+  future version unintentionally.
+* Commit, do not mess with rakefile, version, or history.
+  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
+
+== Copyright
+
+Copyright (c) 2010 Vincenzo Rivello. See LICENSE for details.
+
+
+
